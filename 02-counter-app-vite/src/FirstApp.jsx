@@ -25,15 +25,18 @@ const getResult = (a, b) => {
 
 
 // POR RECOMENDACION TODO SE COLOCA FUERA A MENOS QUE SEA NECESARIO ESTAR DENTRO
-export const FirstApp = () => {
+export const FirstApp = ( {title} ) => {
+
+    // console.log(props)
+
     return (
         <>
             {/* <h1>{ newMessage }</h1> */}
             {/* <h1>{ newMessage.title }</h1> */}
-            <h1>{ JSON.stringify( newMessage ) }</h1>
-            <div>{ getResult(1, 2) }</div>
+            {/* <h1>{ JSON.stringify( newMessage ) }</h1> */}
+            {/* <div>{ getResult(1, 2) }</div> */}
+            <h1>{ title }</h1>
             <p>Soy un subtitulo</p>
-            <div>Otro subtitulo</div>
         </>
     )
 }
