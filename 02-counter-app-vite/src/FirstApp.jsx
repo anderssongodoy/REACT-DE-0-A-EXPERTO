@@ -5,6 +5,7 @@ export const FirstApp = () => {
         <Fragment>
             <h1>Fernando</h1>
             <p>Soy un subtitulo</p>
+            <div>Otro subtitulo</div>
         </Fragment>
     )
 }
