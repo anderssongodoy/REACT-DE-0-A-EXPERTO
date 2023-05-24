@@ -25,7 +25,8 @@ const getResult = (a, b) => {
 
 
 // POR RECOMENDACION TODO SE COLOCA FUERA A MENOS QUE SEA NECESARIO ESTAR DENTRO
-export const FirstApp = ( {title} ) => {
+import PropTypes from 'prop-types';
+export const FirstApp = ( {title, subTitle} ) => {
 
     // console.log(props)
 
@@ -36,7 +37,17 @@ export const FirstApp = ( {title} ) => {
             {/* <h1>{ JSON.stringify( newMessage ) }</h1> */}
             {/* <div>{ getResult(1, 2) }</div> */}
             <h1>{ title }</h1>
-            <p>Soy un subtitulo</p>
+            <p>{ subTitle }</p>
         </>
     )
+}
+
+FirstApp.propTypes={
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number.isRequired,
+}
+
+FirstApp.defaultProps = {
+    title: 'No hay título',
+    subTitle: 'No hay subtítulo'
 }
