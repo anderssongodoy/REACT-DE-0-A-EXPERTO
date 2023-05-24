@@ -13,13 +13,17 @@ export const CounterApp = ({ value }) => {
         setCounter( (c) => c+1)
     }
 
+    const handleRmv = () => setCounter( (c) => c-1)
+
+    const handleRes = () => setCounter( (c) => value)
+
     return (
         <>
             <h1>CounterApp</h1>
             <h2>{ counter }</h2>
-            <button onClick={handleAdd}>
-                +1
-            </button>
+            <button onClick={handleAdd}> +1 </button>
+            <button onClick={handleRmv}> -1 </button>
+            <button onClick={handleRes}> reset </button>
         </>
     )
 }
