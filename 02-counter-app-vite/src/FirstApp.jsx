@@ -36,7 +36,7 @@ export const FirstApp = ( {title, subTitle} ) => {
             {/* <h1>{ newMessage.title }</h1> */}
             {/* <h1>{ JSON.stringify( newMessage ) }</h1> */}
             {/* <div>{ getResult(1, 2) }</div> */}
-            <h1>{ title }</h1>
+            <h1 data-testid="test-title">{ title }</h1>
             <p>{ subTitle }</p>
         </>
     )
@@ -47,7 +47,7 @@ FirstApp.propTypes={
     subTitle: PropTypes.number.isRequired,
 }
 
-FirstApp.defaultProps = {
-    title: 'No hay título',
-    subTitle: 'No hay subtítulo'
-}
+// FirstApp.defaultProps = {
+//     title: 'No hay título',
+//     subTitle: 'No hay subtítulo'
+// }
